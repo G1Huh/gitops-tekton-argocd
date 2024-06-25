@@ -14,7 +14,7 @@ template:
 spec:
   containers:
   - name: pet-clinic
-    image: hgw001468/pet-clinic:init
+    image: hgw001468/pet-clinic:test
     imagePullPolicy: Always
     ports:
     - containerPort: 8080
