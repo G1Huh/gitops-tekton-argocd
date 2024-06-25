@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: pet-clinic
-        image: hgw001468/pet-clinic:test
+        image: hgw001468/pet-clinic:4c9b6b8
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
@@ -53,8 +53,10 @@ metadata:
   namespace: petclinic
 spec:
   ports:
-  - port: 8080
-    targetPort: 8080
+    - port: 8080
+      targetPort: 8080
   selector:
     app: pet-clinic
   type: ClusterIP
+  containers:
+    - image: hgw001468/pet-clinic:4c9b6b8
