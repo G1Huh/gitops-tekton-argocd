@@ -32,8 +32,8 @@ spec:
           volumeMounts:
           - name: tz-seoul
             mountPath: /etc/localtime
-        volumes:
-        - name: tz-seoul
-          hostPath:
-            path: /usr/share/zoneinfo/Asia/Seoul 
-        terminationGracePeriodSeconds: 29
+      volumes:
+      - name: tz-seoul
+        hostPath:
+          path: /usr/share/zoneinfo/Asia/Seoul 
+      terminationGracePeriodSeconds: 29
