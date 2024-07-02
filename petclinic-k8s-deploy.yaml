@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: pet-clinic
-          image: hgw001468/pet-clinic:072f2f9
+          image: hgw001468/pet-clinic:4dfa8cd
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
