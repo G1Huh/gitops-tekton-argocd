@@ -5,7 +5,8 @@ metadata:
   namespace: petclinic
 spec:
   ports:
-  - port: 8080
+  - nodePort: 32737
+    port: 8080
     protocol: TCP
     targetPort: 8080
   selector:
