@@ -5,10 +5,9 @@ metadata:
   namespace: petclinic
 spec:
   ports:
-  - nodePort: 32737
-    port: 8080
+  - port: 8080
     protocol: TCP
     targetPort: 8080
   selector:
     app: pet-clinic
-  type: NodePort
+  type: ClusterIP
