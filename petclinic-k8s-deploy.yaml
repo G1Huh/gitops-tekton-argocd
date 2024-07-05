@@ -21,7 +21,7 @@ spec:
         imagePullPolicy: Always        
         readinessProbe:
           httpGet:
-            path: /health
+            path: /
             port: 8080
             scheme: HTTP
           initialDelaySeconds: 15
