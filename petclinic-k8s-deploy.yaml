@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: pet-clinic
-        image: hgw001468/pet-clinic:2859aed
+        image: hgw001468/pet-clinic:c25bbb4
         imagePullPolicy: Always        
         readinessProbe:
           httpGet:
